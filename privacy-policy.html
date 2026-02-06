@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de confidentialité - Angelus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #334155;
+            background: linear-gradient(135deg, #1BA3A3 0%, #2DD4BF 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #1BA3A3 0%, #0d9488 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        header img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        .content {
+            padding: 30px;
+        }
+        .intro {
+            font-size: 16px;
+            color: #475569;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f1f5f9;
+            border-radius: 12px;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #1BA3A3;
+            font-size: 18px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: #1BA3A3;
+            border-radius: 2px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        .highlight {
+            color: #059669;
+            font-weight: 600;
+        }
+        .contact-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+        .contact-box p {
+            margin-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 30px 30px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px;
+            }
+            header {
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo/android-chrome-512x512.png" alt="Angelus Logo" onerror="this.style.display='none'">
+            <h1>Politique de confidentialité</h1>
+            <p>Dernière mise à jour : Février 2025</p>
+        </header>
+
+        <div class="content">
+            <div class="intro">
+                Bienvenue sur <strong>Angelus</strong>. Nous accordons une grande importance à la protection
+                de vos données personnelles. Cette politique de confidentialité explique comment nous collectons,
+                utilisons et protégeons vos informations lorsque vous utilisez notre application.
+            </div>
+
+            <section>
+                <h2>1. Données collectées</h2>
+                <p><strong>Informations de compte :</strong></p>
+                <ul>
+                    <li>Nom complet (pour personnaliser votre expérience)</li>
+                    <li>Adresse email (pour l'authentification)</li>
+                    <li>Mot de passe (stocké de manière sécurisée et chiffrée)</li>
+                </ul>
+                <p><strong>Données d'utilisation :</strong></p>
+                <ul>
+                    <li>Historique de vos prières (dates et heures)</li>
+                    <li>Préférences de notifications</li>
+                    <li>Paramètres de l'application</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Utilisation des données</h2>
+                <p>Vos données sont utilisées uniquement pour :</p>
+                <ul>
+                    <li>Vous authentifier et sécuriser votre compte</li>
+                    <li>Enregistrer et afficher votre historique de prières</li>
+                    <li>Vous envoyer des rappels de prière (si activés)</li>
+                    <li>Améliorer votre expérience utilisateur</li>
+                </ul>
+                <p class="highlight">Nous ne vendons jamais vos données à des tiers.</p>
+            </section>
+
+            <section>
+                <h2>3. Sécurité des données</h2>
+                <p>Nous mettons en œuvre des mesures de sécurité robustes :</p>
+                <ul>
+                    <li>Chiffrement des mots de passe (bcrypt)</li>
+                    <li>Communications sécurisées (HTTPS/TLS)</li>
+                    <li>Authentification par jetons sécurisés (JWT)</li>
+                    <li>Accès restreint aux bases de données</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4. Notifications</h2>
+                <p>
+                    L'application peut vous envoyer des notifications locales pour vous rappeler
+                    les heures de prière (6h, 12h, 18h). Ces notifications sont :
+                </p>
+                <ul>
+                    <li>Entièrement optionnelles</li>
+                    <li>Gérées localement sur votre appareil</li>
+                    <li>Désactivables à tout moment dans les paramètres</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>5. Vos droits</h2>
+                <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+                <ul>
+                    <li><strong>Accès :</strong> consulter vos données personnelles</li>
+                    <li><strong>Rectification :</strong> modifier vos informations</li>
+                    <li><strong>Suppression :</strong> demander l'effacement de vos données</li>
+                    <li><strong>Portabilité :</strong> récupérer vos données dans un format lisible</li>
+                    <li><strong>Opposition :</strong> refuser certains traitements</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>6. Contact</h2>
+                <p>
+                    Pour toute question concernant cette politique de confidentialité ou pour exercer
+                    vos droits, vous pouvez nous contacter :
+                </p>
+                <div class="contact-box">
+                    <p><strong>Email :</strong> contact@angelus-app.com</p>
+                    <p><strong>Développeur :</strong> Polycarpe Atchadé</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>7. Modifications</h2>
+                <p>
+                    Cette politique peut être mise à jour occasionnellement. Nous vous informerons
+                    de tout changement significatif via l'application ou par email.
+                </p>
+            </section>
+        </div>
+
+        <footer>
+            <p>En utilisant Angelus, vous acceptez cette politique de confidentialité.</p>
+            <p style="margin-top: 10px;">&copy; 2025 Angelus - Tous droits réservés</p>
+        </footer>
+    </div>
+</body>
+</html>

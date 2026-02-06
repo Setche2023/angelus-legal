@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer mon compte - Angelus</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #334155;
+            background: linear-gradient(135deg, #1BA3A3 0%, #2DD4BF 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        .content {
+            padding: 30px;
+        }
+        .warning-box {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .warning-box h3 {
+            color: #dc2626;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .warning-box ul {
+            margin-left: 20px;
+            color: #7f1d1d;
+        }
+        .warning-box li {
+            margin-bottom: 5px;
+        }
+        .info-box {
+            background: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+        .info-box h3 {
+            color: #0369a1;
+            margin-bottom: 10px;
+        }
+        .info-box p {
+            color: #0c4a6e;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #374151;
+        }
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.2s;
+        }
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #1BA3A3;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .checkbox-group input {
+            margin-top: 4px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+        .checkbox-group label {
+            font-weight: normal;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(220, 38, 38, 0.3);
+        }
+        button[type="submit"]:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        .success-message {
+            display: none;
+            background: #ecfdf5;
+            border: 1px solid #a7f3d0;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            color: #065f46;
+        }
+        .success-message h3 {
+            color: #059669;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 30px 30px;
+            border-top: 1px solid #e2e8f0;
+            color: #64748b;
+            font-size: 14px;
+        }
+        footer a {
+            color: #1BA3A3;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Demande de suppression de compte</h1>
+            <p>Application Angelus</p>
+        </header>
+
+        <div class="content">
+            <div class="warning-box">
+                <h3>&#9888; Attention</h3>
+                <p>La suppression de votre compte est <strong>définitive et irréversible</strong>. Cela entraînera :</p>
+                <ul>
+                    <li>La suppression de toutes vos données personnelles</li>
+                    <li>La suppression de votre historique de prières</li>
+                    <li>La perte de vos paramètres et préférences</li>
+                    <li>L'impossibilité de récupérer votre compte</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>Délai de traitement</h3>
+                <p>
+                    Votre demande sera traitée dans un délai de <strong>7 jours ouvrés</strong>.
+                    Vous recevrez un email de confirmation une fois la suppression effectuée.
+                </p>
+            </div>
+
+            <form id="deleteForm">
+                <div class="form-group">
+                    <label for="email">Adresse email du compte à supprimer *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="votre@email.com"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Raison de la suppression (optionnel)</label>
+                    <textarea
+                        id="reason"
+                        name="reason"
+                        placeholder="Dites-nous pourquoi vous souhaitez supprimer votre compte..."
+                    ></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="confirm" name="confirm" required>
+                    <label for="confirm">
+                        Je comprends que cette action est irréversible et que toutes mes données seront définitivement supprimées.
+                    </label>
+                </div>
+
+                <button type="submit" id="submitBtn">
+                    Demander la suppression de mon compte
+                </button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <h3>&#10004; Demande envoyée</h3>
+                <p>
+                    Votre demande de suppression a été enregistrée.<br>
+                    Vous recevrez un email de confirmation à l'adresse indiquée.<br>
+                    Délai de traitement : 7 jours ouvrés maximum.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>
+                <a href="privacy-policy.html">Politique de confidentialité</a> |
+                Contact : contact@angelus-app.com
+            </p>
+            <p style="margin-top: 10px;">&copy; 2025 Angelus - Tous droits réservés</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('deleteForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const reason = document.getElementById('reason').value;
+            const confirm = document.getElementById('confirm').checked;
+
+            if (!confirm) {
+                alert('Veuillez confirmer que vous comprenez les conséquences de cette action.');
+                return;
+            }
+
+            // Create mailto link for the request
+            const subject = encodeURIComponent('Demande de suppression de compte Angelus');
+            const body = encodeURIComponent(
+                `Demande de suppression de compte\n\n` +
+                `Email du compte : ${email}\n\n` +
+                `Raison : ${reason || 'Non spécifiée'}\n\n` +
+                `Je confirme vouloir supprimer définitivement mon compte et toutes mes données associées.\n\n` +
+                `Date de la demande : ${new Date().toLocaleDateString('fr-FR')}`
+            );
+
+            // Open email client
+            window.location.href = `mailto:contact@angelus-app.com?subject=${subject}&body=${body}`;
+
+            // Show success message
+            document.getElementById('deleteForm').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
